@@ -4,8 +4,8 @@ from airflow.operators.bash import BashOperator
 
 my_dag = DAG(   
     dag_id="dags_bash_operator_hw1",
-    schedule="0 0 * * *",
-    start_date=pendulum.datetime(2023, 3, 1, tz="Asia/Seoul"),
+    schedule="0 9 * * 1,6",
+    start_date=pendulum.datetime(2024, 6, 1, tz="Asia/Seoul"),
     catchup=False,
     tags=["homework"]
     
