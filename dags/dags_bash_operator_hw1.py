@@ -14,7 +14,7 @@ my_dag = DAG(
 
 bash_t1 = BashOperator(
     task_id="bash_t1",
-    bash_command="echo $USER",
+    bash_command="whoami",
     dag=my_dag
 )
 
