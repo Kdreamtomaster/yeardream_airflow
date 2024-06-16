@@ -6,6 +6,8 @@ on: # 아래 상황에서 실행해 주세요.
     branches:
       - master  # main 브랜치에 / 수업시간에는 master를 써서 master로 해주시면 됩니다.
 
+
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
