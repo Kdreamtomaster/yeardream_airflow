@@ -1,4 +1,4 @@
-from sensors.seoul_api_date_sensor import SeoulApiDateColumnSensor
+from sensors.seoul_api_date_column_sensor import SeoulApiDateColumnSensor
 from airflow import DAG
 import pendulum
 
@@ -13,7 +13,7 @@ with DAG(
         task_id='sensor__tpss_passenger_cnt',
         dataset_nm='tpssPassengerCnt',
         base_dt_col='CRTR_DT',
-        day_off=-5,
+        day_off=-5, #데이터 특징까지 상세하게 봐야함..
         mode='reschedule'
     )
 
